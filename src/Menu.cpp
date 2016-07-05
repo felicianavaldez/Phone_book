@@ -71,25 +71,53 @@ void Menu::routeAction(int option)
 
 void Menu::listContacts()
 {
-	//TODO: Implement this
+	
 	cout << "Implement  Menu::listContacts" << endl;
 }
 
 void Menu::addContacts()
 {
-	//TODO: Implement this
+	
 	cout << "Implement  Menu::addContacts" << endl;
 }
 
 void Menu::removeContacts()
 {
-	//TODO: Implement this
+	
 	cout << "Implement  Menu::removeContacts" << endl;
 }
 
 void Menu::modifyContacts()
 {
-	//TODO: Implement this
+	system ( "cls");
+    string _name;
+    ifstream input;
+
+    entrada.open ( "log.txt", ios :: in);
+    string name, last name, phone, cel;
+    cout << "MODIFY CONTACTS" << endl;
+    cout << "____________________________________" << endl;
+    cout << "Enter the contact's name:";
+    cin >> _name;
+    name entry >> >> >> name >> tel cel;
+    while (! entrada.eof ()) {
+        if (name == _name) {
+            cout << << _name "and" << name << "match";
+            cout << "Enter the new NAME:";
+            cin >> _name;
+            * Temporary _name << << "" << name << "" << tel << "" << endl << cel;
+        } Else {
+            * Temporary << name << "" << name << "" << tel << "" << endl << cel;
+        }
+        name entry >> >> >> name >> tel cel;
+    }
+    // Error permission denied to erase alchivo
+    entrada.close ();
+    remove ( "log.txt");
+    / * If (remove ( "log.txt") == -1) perror ( "Error deleting file");
+    else puts ( "File successfully deleted"); * /
+    rename ( "temporal.txt", "log.txt");
+    system ( "pause");
 	cout << "Implement  Menu::modifyContacts" << endl;
 }
 
